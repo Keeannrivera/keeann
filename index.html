@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+</head>
+<body>
+    <div class="header">
+        <h1>GERBERAS FLOWER</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">HELP</a>
+        <a href="#">SIGN IN</a>
+    </div>
+
+    <div class="body">
+        <div class="right">
+            <img src="gerberas.jpeg" alt="Gerberas Flower">
+        </div>
+        <div class="left">
+            <h1>Yellow</h1> <p>gerbera daisies tend to symbolize cheerfulness and celebration. </p>
+            <br><h1>Red</h1> <p> gerberas represent an unconscious love or to be fully immersed in love. </p>
+            <br><h1>Pink</h1> <p>gerberas are a symbol of admiration, adoration, or high esteem for someone. </p>
+            <br><h1>White</h1> <p>gerberas are a symbol of purity or a childlike innocence.</p>
+        </div>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+</html>
+
+<style>
+    body {
+        background-color: lightblue;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .header {
+        background-color: lightblue;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar {
+        background-color: #81b8ce;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .navbar a {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #bae8e8;
+        padding: 20px;
+    }
+
+    .right, .left {
+        flex: 1 1 300px;
+        margin: 10px;
+    }
+
+    .right img {
+        width: 100%;
+        height: auto;
+    }
+
+    .left p {
+        font-size: 1.7em;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar a {
+            padding: 10px 0;
+        }
+
+        .body {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left p {
+            font-size: 4vw;
+        }
+
+        footer {
+            padding: 6%;
+        }
+    }
+</style>
